@@ -1,0 +1,148 @@
+#new
+#name "start"
+#description "They"
+#end
+
+#new
+#name "start extended"
+#synonym "They"
+#synonym "They"
+#synonym "They"
+#synonym "They"
+#synonym "They"
+#synonym "They"
+#synonym "Their %role%"
+#synonym "The %role% of %nation%"
+#synonym "The %race_plural% of %nation%"
+#synonym "%nation%'s troops"
+#synonym "The %unitname_plural%"
+#end
+
+#new
+#name "army role start"
+#synonym "%unitname_plural%"
+#synonym "The %unitname_plural%"
+#synonym "%unitname_plural%"
+#synonym "The %unitname_plural%"
+#synonym "%nation%'s %unitname_plural%"
+#end
+
+#new
+#name "are"
+#description "are"
+#prev "start"
+#end
+
+#new
+#name "superlative"
+#synonym "very"
+#synonym "extremely"
+#synonym "extraordinarily"
+#synonym "unusually"
+#synonym "unbelievably"
+#synonym "unfathomably"
+#synonym "notably"
+#end
+
+#new
+#name "negative"
+#synonym "are sadly"
+#synonym "are regrettably"
+#synonym "are unfortunately"
+#synonym "are"
+#end
+
+#new
+#name "immunity desc"
+#synonym "resistant to"
+#synonym "protected from"
+#prev "are"
+#end
+
+#new
+#name "terrain desc"
+#synonym "are native to"
+#synonym "are at home in"
+#synonym "are keenly familiar with"
+#prev "start"
+#end
+
+#new
+#name "lineage desc"
+#synonym "are descended from"
+#synonym "have the blood of"
+#prev "start"
+#end
+
+#new
+#name "senses desc"
+#description "have"
+#prev "start"
+#end
+
+#new
+#name "physique desc"
+#description "are"
+#prev "start extended"
+#end
+
+#new
+#name "physique extra superlative"
+#synonym "beyond compare"
+#synonym "beyond mere mortals"
+#synonym "beyond belief"
+#synonym "beyond reckoning"
+#synonym "without peer"
+#bridge "generic bridge"
+#end
+
+#new
+#name "physique end"
+#synonym "warriors"
+#synonym "soldiers"
+#bridge "physique bridge"
+#end
+
+#new
+#name "physique bridge"
+#description "who"
+#end
+
+#new
+#name "generic bridge"
+#description "and they"
+#end
+
+#new
+#name "wondrous start"
+#synonym "They"
+#synonym "They"
+#synonym "They"
+#synonym "These %role%"
+#synonym "The %role% of %nation%"
+#synonym "The %unitname_plural%"
+#synonym "The %unitname_plural%"
+#synonym "%nation%'s %unitname_plural%"
+#synonym "The %unitname_plural% of %nation%"
+#end
+
+#new
+#name "wondrous desc"
+#synonym "are gifted with"
+#synonym "are empowered with"
+#prev "wondrous start"
+#chanceinc personalcommand holy *0
+#uniquedescription
+#end
+
+#new
+#name "wondrous desc"
+#synonym "are blessed with"
+#synonym "are gifted with"
+#synonym "are empowered with"
+#synonym "have been given"
+#prev "wondrous start"
+#basechance 0
+#chanceinc personalcommand holy 1
+#uniquedescription
+#end

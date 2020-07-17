@@ -1,35 +1,21 @@
 ----- Any role
 #new
-#name "%nation% fields %armortypes% %role% wielding %weapons_plural%."
+#name "troop description"
+#set "troop"
+#description "%nation% fields %armortypes% %role% wielding %weapons_plural%."
+#basechance 0.25
 #end
 
 ----- Footmen
 #new
-#name "The %role% of %nation% wear %armortypes% armor and are armed with %weapons%."
-#nopose mounted
-#nopose chariot
-#end
-
-#new
-#name "%nation%'s %role% are armored with %armortypes% armor and armed with %weapons%."
-#nopose mounted
-#nopose chariot
-#end
-
-#new
-#name "The %role% in %nation% carry %weapons_plural% and are armored with %armortypes% armor."
-#nopose mounted
-#nopose chariot
-#end
-
-#new
-#name "The %role% of %nation% are clad in %armortypes% armor and fight with %weapons%."
-#nopose mounted
-#nopose chariot
-#end
-
-#new
-#name "%nation%'s %role% are outfitted with %weapons% and %armortypes% armor."
+#name "troop description"
+#set "troop"
+#synonym "The %role% of %nation% wear %armortypes% armor and are armed with %weapons%."
+#synonym "%nation%'s %role% are armored with %armortypes% armor and armed with %weapons%."
+#synonym "The %role% in %nation% carry %weapons_plural% and are armored with %armortypes% armor."
+#synonym "The %role% of %nation% are clad in %armortypes% armor and fight with %weapons%."
+#synonym "%nation%'s %role% are outfitted with %weapons% and %armortypes% armor."
+#uniquedescription
 #nopose mounted
 #nopose chariot
 #end
@@ -37,14 +23,11 @@
 ---- Chariots
 
 #new
-#name "Charioteers ride their chariots pulled by %mount_plural% and fight with %weapons_plural%."
-#nopose infantry
-#nopose mounted
-#nopose ranged
-#end
-
-#new
-#name "%nation% fields %armortypes% %mount%-drawn chariots to overrun their foes."
+#name "troop description"
+#set "troop"
+#synonym "Charioteers ride their chariots pulled by %mount_plural% and fight with %weapons_plural%."
+#synonym "%nation% fields %armortypes% %mount%-drawn chariots to overrun their foes."
+#uniquedescription
 #nopose infantry
 #nopose mounted
 #nopose ranged
@@ -53,14 +36,11 @@
 ---- Archers only
 
 #new
-#name "The archers of %nation% are armored with %armortypes% armor and shoot their enemies with %weapons%."
-#nopose infantry
-#nopose mounted
-#nopose chariot
-#end
-
-#new
-#name "%unitname_plural% support the armies of %nation% with their %weapons%."
+#name "troop description"
+#set "troop"
+#synonym "The archers of %nation% are armored with %armortypes% armor and shoot their enemies with %weapons%."
+#synonym "%unitname_plural% support the armies of %nation% with their %weapons%."
+#uniquedescription
 #nopose infantry
 #nopose mounted
 #nopose chariot
@@ -69,30 +49,13 @@
 ---- Cavalry only
 
 #new
-#name "The valiant cavaliers of %nation% are armored with %armortypes% armor. The %unitname% rides %mount_plural%."
-#nopose infantry
-#nopose ranged
-#nopose chariot
-#end
-
-
-#new
-#name "The cavalry of %nation% is armored with %armortypes% armor. The %unitname_plural% are mounted on %mount_plural%."
-#nopose infantry
-#nopose ranged
-#nopose chariot
-#end
-
-#new
-#name "The %unitname_plural% of %nation% ride into battle clad in %armortypes% armor astride %mount_plural%."
-#nopose infantry
-#nopose ranged
-#nopose chariot
-#end
-
-
-#new
-#name "%unitname_plural% ride down the foes of %nation% atop war-trained %mount_plural%."
+#name "troop description"
+#set "troop"
+#synonym "The valiant cavaliers of %nation% are armored with %armortypes% armor. The %unitname% rides %mount_plural%."
+#synonym "The cavalry of %nation% is armored with %armortypes% armor. The %unitname_plural% are mounted on %mount_plural%."
+#synonym "The %unitname_plural% of %nation% ride into battle clad in %armortypes% armor astride %mount_plural%."
+#synonym "%unitname_plural% ride down the foes of %nation% atop war-trained %mount_plural%."
+#uniquedescription
 #nopose infantry
 #nopose ranged
 #nopose chariot

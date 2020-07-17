@@ -28,6 +28,12 @@
 #theme militia
 #cannot_be_commander
 #onlyfilter
+#set "army role"
+#prev "army role start"
+#synonym "are strictly local troops raised as a last line of defense"
+#synonym "are levied to defend the homeland while the armies of %nation% are away"
+#synonym "are civilian defenders unused to the rigors of war"
+#synonym "are rear echelon troops intended as a last resort"
 #end
 
 -- Undisciplined militia
@@ -58,6 +64,12 @@
 #theme militia
 #cannot_be_commander
 #onlyfilter
+#set "army role"
+#prev "army role start"
+#synonym "are poorly trained and motivated"
+#synonym "are a ragtag mob with only the barest semblance of military discipline"
+#synonym "are the lowest rung of %nation%'s military hierarchy, untrained and untested"
+#synonym "are inexperienced and untrained troops barely fit for battle"
 #end
 
 -- Nomal militia
@@ -88,6 +100,12 @@
 #theme militia
 #cannot_be_commander
 #onlyfilter
+#set "army role"
+#prev "army role start"
+#synonym "are cheaply raised civilian levies used to fill out the ranks of the military"
+#synonym "are poorly trained militia used to support %nation%'s armies"
+#synonym "are inexpensive but largely untrained garrison troops"
+#synonym "are low ranking soldiers, underpaid and lacking in training"
 #end
 
 
@@ -106,6 +124,12 @@
 #maxvarieties 2
 #theme formationfighter
 #primarycommand #formationfighter
+#set "army role"
+#prev "army role start"
+#synonym "are disciplined and well-drilled soldiers"
+#synonym "fight in close, rigid formations"
+#synonym "are used to fighting in narrow formations"
+#synonym "fight shoulder to shoulder with their fellow soldiers"
 #end
 
 #new
@@ -121,6 +145,12 @@
 #maxvarieties 2
 #theme formationfighter
 #primarycommand #formationfighter
+#set "army role"
+#prev "army role start"
+#synonym "are disciplined and well-drilled soldiers"
+#synonym "fight in close, rigid formations"
+#synonym "are used to fighting in narrow formations"
+#synonym "fight shoulder to shoulder with their fellow soldiers"
 #end
 
 #new
@@ -136,6 +166,12 @@
 #maxvarieties 2
 #theme formationfighter
 #primarycommand #formationfighter
+#set "army role"
+#prev "army role start"
+#synonym "are disciplined and well-drilled soldiers"
+#synonym "fight in close, rigid formations"
+#synonym "are used to fighting in narrow formations"
+#synonym "fight shoulder to shoulder with their fellow soldiers"
 #end
 
 #new
@@ -151,6 +187,12 @@
 #maxvarieties 2
 #theme formationfighter
 #primarycommand #formationfighter
+#set "army role"
+#prev "army role start"
+#synonym "are disciplined and well-drilled soldiers"
+#synonym "fight in close, rigid formations"
+#synonym "are used to fighting in narrow formations"
+#synonym "fight shoulder to shoulder with their fellow soldiers"
 #end
 
 #new
@@ -166,6 +208,12 @@
 #maxvarieties 2
 #theme formationfighter
 #primarycommand #formationfighter
+#set "army role"
+#prev "army role start"
+#synonym "are disciplined and well-drilled soldiers"
+#synonym "fight in close, rigid formations"
+#synonym "are used to fighting in narrow formations"
+#synonym "fight shoulder to shoulder with their fellow soldiers"
 #end
 
 #new
@@ -181,6 +229,12 @@
 #maxvarieties 1
 #theme formationfighter
 #primarycommand #formationfighter
+#set "army role"
+#prev "army role start"
+#synonym "are disciplined and well-drilled soldiers"
+#synonym "fight in close, rigid formations"
+#synonym "are used to fighting in narrow formations"
+#synonym "fight shoulder to shoulder with their fellow soldiers"
 #end
 
 #new
@@ -196,6 +250,12 @@
 #maxvarieties 1
 #theme formationfighter
 #primarycommand #formationfighter
+#set "army role"
+#prev "army role start"
+#synonym "are disciplined and well-drilled soldiers"
+#synonym "fight in close, rigid formations"
+#synonym "are used to fighting in narrow formations"
+#synonym "fight shoulder to shoulder with their fellow soldiers"
 #end
 
 #new
@@ -211,6 +271,12 @@
 #maxvarieties 1
 #theme formationfighter
 #primarycommand #formationfighter
+#set "army role"
+#prev "army role start"
+#synonym "are disciplined and well-drilled soldiers"
+#synonym "fight in close, rigid formations"
+#synonym "are used to fighting in narrow formations"
+#synonym "fight shoulder to shoulder with their fellow soldiers"
 #end
 
 #new
@@ -226,6 +292,12 @@
 #maxvarieties 1
 #theme formationfighter
 #primarycommand #formationfighter
+#set "army role"
+#prev "army role start"
+#synonym "are disciplined and well-drilled soldiers"
+#synonym "fight in close, rigid formations"
+#synonym "are used to fighting in narrow formations"
+#synonym "fight shoulder to shoulder with their fellow soldiers"
 #end
 
 #new
@@ -241,6 +313,12 @@
 #maxvarieties 1
 #theme formationfighter
 #primarycommand #formationfighter
+#set "army role"
+#prev "army role start"
+#synonym "are disciplined and well-drilled soldiers"
+#synonym "fight in close, rigid formations"
+#synonym "are used to fighting in narrow formations"
+#synonym "fight shoulder to shoulder with their fellow soldiers"
 #end
 
 #new
@@ -263,6 +341,12 @@
 #generateitem 0.5 cloakb
 #alloweliteitems
 #allowelitenaming
+#set "army role"
+#prev "army role start"
+#synonym "are experienced veteran troops that form the core of %nation%'s army"
+#synonym "are well drilled and highly paid professional troops"
+#synonym "are the backbone of %nation%'s army, competent and well disciplined"
+#synonym "are highly skilled soldiers"
 #end
 
 
@@ -287,6 +371,12 @@
 #generateitem 1 cloakb
 #alloweliteitems
 #allowelitenaming
+#set "army role"
+#prev "army role start"
+#synonym "are the pride of %nation% and no coin is spared training and equipping them"
+#synonym "are veterans of many campaigns, the elite of %nation%'s armies"
+#synonym "are the pinnacle of %nation%'s military, respected and celebrated"
+#synonym "are elite soldiers of tremendous skill and formidable reputation"
 #end
 
 
@@ -309,6 +399,12 @@
 #themeinc "thisitemtheme elite *8"
 #generateitem 1 cloakb
 #alloweliteitems
+#set "army role"
+#prev "army role start"
+#synonym "are experienced veteran troops that form the core of %nation%'s army"
+#synonym "are well drilled and highly paid professional troops"
+#synonym "are the backbone of %nation%'s army, competent and well disciplined"
+#synonym "are highly skilled soldiers"
 #end
 
 
@@ -332,6 +428,11 @@
 #generateitem 0.25 cloakb
 #theme irregular
 #theme mountain
+#set "army role"
+#prev "army role start"
+#synonym "are irregular troops raised from the mountains of %nation%"
+#synonym "are skilled alpine soldiers"
+#synonym "are wild highland warriors"
 #end
 
 #new
@@ -353,6 +454,11 @@
 #generateitem 0.25 cloakb
 #theme irregular
 #theme forest
+#set "army role"
+#prev "army role start"
+#synonym "are irregular troops raised from the forests of %nation%"
+#synonym "are skilled foresters"
+#synonym "are wild woodland warriors"
 #end
 
 #new
@@ -375,6 +481,11 @@
 #generateitem 0.25 cloakb
 #theme irregular
 #theme swamp
+#set "army role"
+#prev "army role start"
+#synonym "are irregular troops raised from the swamps of %nation%"
+#synonym "are skilled swamp survivalists"
+#synonym "are wild wetland warriors"
 #end
 
 #new
@@ -397,6 +508,11 @@
 #generateitem 0.25 cloakb
 #theme irregular
 #theme waste
+#set "army role"
+#prev "army role start"
+#synonym "are irregular troops raised from the deserts of %nation%"
+#synonym "are skilled survivalists"
+#synonym "are wild wasteland warriors"
 #end
 
 #new
@@ -420,6 +536,12 @@
 #maxvarieties 2
 #maxunits 1
 #primarycommand #berserk
+#set "army role"
+#prev "army role start"
+#synonym "are frenzied savages with no sense of self-preservation"
+#synonym "fight in a berserk rage"
+#synonym "are reknowned for their furious rage"
+#synonym "love fighting and throw themselves into the fray with wild abandon"
 #end
 
 
@@ -445,6 +567,12 @@
 #theme stealthy
 #generateitem 0.25 cloakb
 #primarycommand #stealthy
+#set "army role"
+#prev "army role start"
+#synonym "are light stealthy troops used to shadow %nation%'s enemies"
+#synonym "are skilled ambushers who fight with stealth and guile"
+#synonym "are stealthy troops who move unseen through enemy lands"
+#synonym "are stealth raiders launching surprise attacks against their enemies"
 #end
 
 
@@ -457,6 +585,11 @@
 #chanceinc pose chariot *0
 #command "#patrolbonus +1"
 #generateitem 0.25 cloakb
+#set "army role"
+#prev "army role start"
+#synonym "are the enforcers of %nation%, tasked with hunting down bandits and spies"
+#synonym "are responsible for enforcing law and order in the kingdom"
+#synonym "are expert hunters and trackers"
 #end
 
 
@@ -471,6 +604,11 @@
 #command "#castledef +1"
 #generateitem 0.25 cloakb
 #theme guard
+#set "army role"
+#prev "army role start"
+#synonym "are skilled defenders used to protect %nation%'s strongholds"
+#synonym "are sworn to protect the cities and fortresses of %nation%"
+#synonym "are stalwart guards who excel at defending their homes"
 #end
 
 #new
@@ -484,6 +622,11 @@
 #command "#castledef +2"
 #generateitem 0.25 cloakb
 #theme guard
+#set "army role"
+#prev "army role start"
+#synonym "are skilled defenders used to protect %nation%'s strongholds"
+#synonym "are sworn to protect the cities and fortresses of %nation%"
+#synonym "are stalwart guards who excel at defending their homes"
 #end
 
 #new
@@ -507,6 +650,11 @@
 #allowelitenaming
 #theme elite
 #theme guard
+#set "army role"
+#prev "army role start"
+#synonym "are sworn to protect the leaders and nobles of %nation%"
+#synonym "are expert bodyguards who defend %nation%'s leaders"
+#synonym "are frequently employed as bodyguards"
 #end
 
 #new
@@ -522,6 +670,11 @@
 #generateitem 0.25 cloakb
 #theme guard
 #theme trooponly
+#set "army role"
+#prev "army role start"
+#synonym "are sworn to protect the leaders and nobles of %nation%"
+#synonym "are expert bodyguards who defend %nation%'s leaders"
+#synonym "are frequently employed as bodyguards"
 #end
 
 #new
@@ -548,6 +701,12 @@
 #theme elite
 #theme stealthy
 #primarycommand #stealthy
+#set "army role"
+#prev "army role start"
+#synonym "are light stealthy troops used to shadow %nation%'s enemies"
+#synonym "are skilled ambushers who fight with stealth and guile"
+#synonym "are stealthy troops who move unseen through enemy lands"
+#synonym "are stealth raiders launching surprise attacks against their enemies"
 #end
 
 #new
@@ -568,6 +727,11 @@
 #themeinc theme advanced *0.25
 #generateitem 1 cloakb
 #theme pillager
+#set "army role"
+#prev "army role start"
+#synonym "are brutal and rapacious soldiers, feared and hated by civilian populations"
+#synonym "are reknowned for their greed and cruelty"
+#synonym "are ruthless mercenaries accustomed to living off the land"
 #end
 
 #new
@@ -593,6 +757,11 @@
 #theme pillager
 #theme stealthy
 #primarycommand #stealthy
+#set "army role"
+#prev "army role start"
+#synonym "are brutal and rapacious soldiers, feared and hated by civilian populations"
+#synonym "are reknowned for their greed and cruelty"
+#synonym "are ruthless mercenaries accustomed to living off the land"
 #end
 
 #new
@@ -612,6 +781,11 @@
 #themeinc theme heavy *0.1
 #themeinc theme advanced *0.5
 #theme skirmisher
+#set "army role"
+#prev "army role start"
+#synonym "are light irregular troops used to harass the enemy"
+#synonym "are skirmishers ill suited for heavy fighting"
+#synonym "are mobile and flexible troops used to cover the army's flanks"
 #end
 
 #new
@@ -637,4 +811,9 @@
 #theme skirmisher
 #theme stealthy
 #primarycommand #stealthy
+#set "army role"
+#prev "army role start"
+#synonym "are light irregular troops used to harass the enemy"
+#synonym "are skirmishers ill suited for heavy fighting"
+#synonym "are mobile and flexible troops used to cover the army's flanks"
 #end

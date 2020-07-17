@@ -15,6 +15,15 @@ public class Filter extends Entity {
 	public List<ThemeInc> themeincs = new ArrayList<>();
 	public List<String> types = new ArrayList<>();
 	public double power = 1;
+
+	//used for descriptions
+	public List<String> thesaurus = new ArrayList<>();
+	public String nextDesc = "";
+	public String prevDesc = "";
+	public String bridgeDesc = "";
+	public String descSet = "";
+	
+	
 	public Filter(NationGen nationGen) {
 		super(nationGen);
 	}
@@ -61,6 +70,21 @@ public class Filter extends Entity {
 				case "#power":
 					this.power = command.args.get(0).getInt();
 					break;
+				case "#prev":
+					this.prevDesc = command.args.get(0).get();
+					break;
+				case "#next":
+					this.nextDesc = command.args.get(0).get();
+					break;
+				case "#bridge":
+					this.bridgeDesc = command.args.get(0).get();
+					break;					
+				case "#set":
+					this.descSet = command.args.get(0).get();
+					break;					
+				case "#text":
+				case "#synonym":
+					this.thesaurus.add(command.args.get(0).get());					
 				default:
 					super.handleOwnCommand(command);
 					break;

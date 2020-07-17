@@ -1,1 +1,2 @@
 #load troopdescs ./data/descriptions/troop_descriptions.txt
+#load filterdescs ./data/descriptions/filter_descriptions.txt
