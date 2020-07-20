@@ -132,6 +132,7 @@
 #set "physique"
 #prev "physique desc"
 #next "physique end"
+#bridge "physique bridge"
 #synonym "strong"
 #synonym "mighty"
 #allowsuperlative
@@ -146,6 +147,7 @@
 #set "physique"
 #prev "physique desc"
 #next "physique end"
+#bridge "physique bridge"
 #synonym "weak"
 #synonym "frail"
 #allowsuperlative
@@ -164,6 +166,7 @@
 #set "physique"
 #prev "physique desc"
 #next "physique end"
+#bridge "physique bridge"
 #synonym "stocky"
 #synonym "brawny"
 #allowsuperlative
@@ -182,6 +185,7 @@
 #set "physique"
 #prev "physique desc"
 #next "physique end"
+#bridge "physique bridge"
 #synonym "bulky"
 #synonym "clumsy"
 #allowsuperlative
@@ -225,6 +229,7 @@
 #set "physique"
 #prev "physique desc"
 #next "physique end"
+#bridge "physique bridge"
 #synonym "aggressive"
 #synonym "reckless"
 #allowsuperlative
@@ -239,6 +244,7 @@
 #set "physique"
 #prev "physique desc"
 #next "physique end"
+#bridge "physique bridge"
 #synonym "gluttonous"
 #synonym "hungry"
 #allowsuperlative
@@ -255,6 +261,7 @@
 #set "physique"
 #prev "physique desc"
 #next "physique end"
+#bridge "physique bridge"
 #synonym "cowardly"
 #synonym "craven"
 #allowsuperlative
@@ -270,6 +277,7 @@
 #set "physique"
 #prev "physique desc"
 #next "physique end"
+#bridge "physique bridge"
 #synonym "brave"
 #synonym "bold"
 #allowsuperlative
@@ -284,6 +292,7 @@
 #set "physique"
 #prev "physique desc"
 #next "physique end"
+#bridge "physique bridge"
 #synonym "quick-footed"
 #synonym "fast"
 #allowsuperlative
@@ -299,6 +308,7 @@
 #set "physique"
 #prev "physique desc"
 #next "physique end"
+#bridge "physique bridge"
 #synonym "sickly"
 #synonym "deformed"
 #negative
@@ -415,6 +425,7 @@
 #set "physique"
 #prev "physique desc"
 #next "physique end"
+#bridge "physique bridge"
 #synonym "cheaply raised"
 #synonym "cheaply conscripted"
 #extendeddescription "and they require few wages, although they cannot be relied upon for their own equipment"
@@ -497,6 +508,7 @@
 #set "physique"
 #prev "physique desc"
 #next "physique end"
+#bridge "physique bridge"
 #synonym "thick skinned"
 #synonym "durable"
 #allowsuperlative
@@ -553,6 +565,7 @@
 #set "physique"
 #prev "physique desc"
 #next "physique end"
+#bridge "physique bridge"
 #synonym "stealthy"
 #synonym "sneaky"
 #allowsuperlative

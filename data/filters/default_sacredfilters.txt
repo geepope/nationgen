@@ -9,8 +9,9 @@
 #set "physique"
 #prev "physique desc"
 #next "physique end"
+#bridge "physique bridge"
 #synonym "ascetic"
-#synonym "deformed"
+#synonym "devoted"
 #end
 
 #new
@@ -428,6 +429,7 @@
 #set "physique"
 #prev "physique desc"
 #next "physique end"
+#bridge "physique bridge"
 #synonym "puissant"
 #synonym "gifted"
 #synonym "elite"
@@ -639,7 +641,7 @@
 #command "#stormpower +2"
 #command "#gcost +5"
 #tag "path air"
-#synonym "an affinity with storms"
+#synonym "an affinity for storms"
 #synonym "the strength of storms"
 #set "wondrous"
 #prev "wondrous desc"
@@ -657,7 +659,7 @@
 #command "#gcost +10"
 #power 2
 #tag "path air"
-#synonym "an affinity with storms"
+#synonym "an affinity for storms"
 #synonym "the strength of storms"
 #set "wondrous"
 #prev "wondrous desc"

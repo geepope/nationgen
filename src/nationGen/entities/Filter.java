@@ -18,9 +18,9 @@ public class Filter extends Entity {
 
 	//used for descriptions
 	public List<String> thesaurus = new ArrayList<>();
-	public String nextDesc = "";
-	public String prevDesc = "";
-	public String bridgeDesc = "";
+	public List<Filter> nextDesc = new ArrayList<>();
+	public List<Filter> prevDesc = new ArrayList<>();
+	public List<Filter> bridgeDesc = new ArrayList<>();
 	public String descSet = "";
 	
 	
@@ -70,15 +70,15 @@ public class Filter extends Entity {
 				case "#power":
 					this.power = command.args.get(0).getInt();
 					break;
-				case "#prev":
-					this.prevDesc = command.args.get(0).get();
+				/*case "#prev":
+					this.prevDesc = new List<Filter>();
 					break;
 				case "#next":
 					this.nextDesc = command.args.get(0).get();
 					break;
 				case "#bridge":
 					this.bridgeDesc = command.args.get(0).get();
-					break;					
+					break;*/
 				case "#set":
 					this.descSet = command.args.get(0).get();
 					break;					

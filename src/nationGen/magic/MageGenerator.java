@@ -263,10 +263,10 @@ public class MageGenerator extends TroopGenerator {
 		for(int i = 0; i < 3; i++)
 		{
 			tagAll(mages.get(i), "schoolmage", i+1);
-			
-			
+						
 			for(Unit u : mages.get(i))
 			{
+				u.tags.addName("tier"+Integer.toString(i+1));
 				unitGen.addFreeTemplateFilters(u);
 				unitGen.addTemplateFilter(u, "magetemplates", "default_magetemplates");
 			}
@@ -427,6 +427,7 @@ public class MageGenerator extends TroopGenerator {
 				
 				MagicFilter f = getMagicFilter(derp, all.get(i).get(j), mages.get(i).size());
 				mages.get(i).get(j).appliedFilters.add(f);
+				f.tags.add("description", getPathDescription(mages.get(i).get(j).getMagicPicks(true)));
 				
 
 				// Sets mage name to match pattern. Debug purposes.
@@ -587,7 +588,10 @@ public class MageGenerator extends TroopGenerator {
 				extramages.get(0).commands.add(Command.args("#rpcost", "2"));
 
 			for(Unit u : extramages)
+			{
 				unitGen.handleMontagUnits(u, new MageMontagTemplate(nation, nationGen, assets, 4), "montagmages");
+				u.tags.addName("extramage");
+			}
 		
 			list.addAll(0, extramages);			
 			mages.add(extramages);
@@ -834,10 +838,51 @@ public class MageGenerator extends TroopGenerator {
 		MagicFilter f = new MagicFilter(nationGen);
 		f.prio = prio;
 		f.pattern = p;
-		f.name = "MAGICPICKS";
+		f.name = "MAGICPICKS";		
 		f.tags.addAll(p.tags);
-		f.tags.addName("do_not_show_in_descriptions");
+		f.descSet = "mage";
+		f.tags.add("prev","mage desc");
+		f.tags.add("next","mage end");
+		assets.initializeFilters(List.of(f));
+		
+		//f.tags.addName("do_not_show_in_descriptions"); I'm not sure that this did anything, but we do want to show up in descriptions now
 		return f;
+	}
+	
+	public String getPathDescription(MagicPathInts paths)
+	{
+		StringBuilder pathDesc = new StringBuilder();
+		List<String> pathNames = new ArrayList<>();
+		List<MagicPath> bests = paths.getAllHighestPaths();
+		
+		for (MagicPath p : paths.getAllHighestPaths())
+			pathNames.add(p.name);	
+		
+		if (pathNames.size() > 3)		
+			return "various";
+		else
+		{
+			for (int i = 0; i < pathNames.size(); i++)
+			{
+				if (i > 0)
+				{
+					if (pathNames.size() > 2)
+						pathDesc.append(",");
+					
+					pathDesc.append(" ");
+						
+					if (i == pathNames.size() - 1)
+						pathDesc.append("and ");
+				}
+				
+				pathDesc.append(pathNames.get(i));			
+			}
+			
+			if (pathDesc.length() == 0)
+				pathDesc.append("no");
+			
+			return pathDesc.toString();
+		}
 	}
 	
 	private int getVaryPoint(MagicPattern p, int primaries)
@@ -1033,9 +1078,11 @@ public class MageGenerator extends TroopGenerator {
 		}
 	
 
-		MagicFilter f = new MagicFilter(nationGen);
-		f.prio = prio;
-		f.pattern = pattern;
+		MagicFilter f = getMagicFilter(prio, pattern, 0);
+		bases.get(0).appliedFilters.add(f);
+		f.tags.add("description", getPathDescription(bases.get(0).getMagicPicks(true)));
+		//f.prio = prio;
+		//f.pattern = pattern;
 		
 		bases.get(0).color = nation.colors[2];
 		bases.get(0).appliedFilters.add(f);
@@ -1235,6 +1282,7 @@ public class MageGenerator extends TroopGenerator {
 				u.commands.add(new Command("#holy"));
 				u.commands.add(Command.args("#gcost", "+" + ((int)(Math.pow(2, currentStrength))*10 + currentStrength * priestextracost)));
 				u.tags.add("priest", currentStrength);
+				u.tags.addName("tier"+Integer.toString(currentStrength));
 
 				
 				u.commands.add(Command.args("#mr", "+" + (2 + currentStrength)));

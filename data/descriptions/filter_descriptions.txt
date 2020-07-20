@@ -87,20 +87,9 @@
 #end
 
 #new
-#name "physique extra superlative"
-#synonym "beyond compare"
-#synonym "beyond mere mortals"
-#synonym "beyond belief"
-#synonym "beyond reckoning"
-#synonym "without peer"
-#bridge "generic bridge"
-#end
-
-#new
 #name "physique end"
 #synonym "warriors"
 #synonym "soldiers"
-#bridge "physique bridge"
 #end
 
 #new

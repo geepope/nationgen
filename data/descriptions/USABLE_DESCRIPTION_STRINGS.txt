@@ -14,5 +14,6 @@ DONE:
 
 TODO:
 %specificmagic%: The specialty path or paths of this mage compared to other mages of it's tier.
+%unitmagic%: Lists strongest magic paths of the unit
 %strongmagic%: Lists strong magic paths of the nation
 %weakmagic%: Lists weak magic paths of the nation
